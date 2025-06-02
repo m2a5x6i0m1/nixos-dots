@@ -1,0 +1,19 @@
+{
+  imports = [
+    ./bluetooth.nix
+    ./boot.nix
+    ./enviroment-variables.nix
+    ./firefox.nix
+    ./fonts.nix
+    ./hyprland.nix
+    ./locale.nix
+    ./login-manger.nix
+    ./neovim.nix
+    ./network.nix
+    ./nix-settings.nix
+    ./shell.nix
+    ./sound.nix
+    ./timezone.nix
+    ./users.nix
+  ];
+}
