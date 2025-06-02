@@ -1,0 +1,42 @@
+{ self, inputs, ... }:
+{
+  flake.nixosModules.hyprland =
+    { pkgs, ... }:
+    {
+      # Wayland compositor of my choice
+      programs.hyprland.enable = true;
+      programs.hyprlock.enable = true;
+      services.hypridle.enable = true;
+
+      # UWSM for robust Wayland session management
+      programs.uwsm.enable = true;
+      programs.hyprland.withUWSM = true;
+
+      # Packages
+      environment.systemPackages = with pkgs; [
+        # Utilities For Wayland
+        awww
+        brightnessctl
+        cliphist
+        swaynotificationcenter
+        waypaper
+        wev
+        wl-clip-persist
+        wl-clipboard
+        wofi
+
+        # Hyprland Ecosystem Utilities
+        hyprpolkitagent
+        hyprshot
+        hyprsunset
+
+        # Desktop apps
+        ghostty
+        obsidian
+        pwvucontrol
+
+        # Let's pretend it's not here
+        quickshell
+      ];
+    };
+}
