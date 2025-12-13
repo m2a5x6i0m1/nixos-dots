@@ -31,7 +31,6 @@
     libreoffice
     obsidian
     pwvucontrol
-    spotify
     telegram-desktop
     zathura
 
