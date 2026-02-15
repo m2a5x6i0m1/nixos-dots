@@ -3,7 +3,7 @@ let
   gitSyncNotes = pkgs.writeScriptBin "git-sync-notes" ''
     #!/usr/bin/env bash
 
-    VAULT_DIR="$HOME/notes"
+    VAULT_DIR="$HOME/vault"
     cd $VAULT_DIR || exit 1
 
     git add .
