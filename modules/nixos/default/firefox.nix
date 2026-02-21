@@ -109,9 +109,9 @@ in
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/darkreader/latest.xpi";
           installation_mode = "force_installed";
         };
-        # Unhook - Remove YouTube Recommended & Shorts
-        "myallychou@gmail.com" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/youtube-recommended-videos/latest.xpi";
+        # UnTrap for YouTube
+        "{2662ff67-b302-4363-95f3-b050218bd72c}" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/untrap-for-youtube/latest.xpi";
           installation_mode = "force_installed";
         };
       };
