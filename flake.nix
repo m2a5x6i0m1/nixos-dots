@@ -16,10 +16,15 @@
     inputs@{ nixpkgs, self, ... }:
     {
       nixosConfigurations = {
-        laptop = nixpkgs.lib.nixosSystem {
+        lenovo-laptop = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = { inherit inputs self; };
-          modules = [ ./hosts/laptop/configuration.nix ];
+          modules = [ ./hosts/lenovo-laptop/configuration.nix ];
+        };
+        asus-laptop = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = { inherit inputs self; };
+          modules = [ ./hosts/asus-laptop/configuration.nix ];
         };
       };
     };

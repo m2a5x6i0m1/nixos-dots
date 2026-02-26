@@ -14,9 +14,7 @@
     # Utilities For Wayland
     brightnessctl
     cliphist
-    swaybg
     swaynotificationcenter
-    waypaper
     wev
     wl-clip-persist
     wl-clipboard
@@ -30,7 +28,9 @@
     # Desktop apps
     ghostty
     obsidian
+    onlyoffice-desktopeditors
     pwvucontrol
+    spotify
     telegram-desktop
     zathura
 
