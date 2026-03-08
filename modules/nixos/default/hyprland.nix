@@ -28,11 +28,6 @@
     # Desktop apps
     ghostty
     obsidian
-    onlyoffice-desktopeditors
-    pwvucontrol
-    spotify
-    telegram-desktop
-    zathura
 
     # Let's pretend it's not here
     quickshell
