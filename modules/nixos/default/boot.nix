@@ -11,14 +11,12 @@
 
     # No logs during boot at all
     kernelParams = [
-      "quiet"
       "vga=current"
-      "console=tty2"
-      "rd.systemd.show_status=false"
+      "rd.systemd.show_status=true"
       "rd.udev.log_level=3"
       "udev.log_priority=3"
     ];
-    initrd.verbose = false;
+    initrd.verbose = true;
     consoleLogLevel = 0;
   };
 }
