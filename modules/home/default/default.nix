@@ -18,6 +18,7 @@
       ./git.nix
       ./lazygit.nix
       ./notes-sync.nix
+      ./onlyoffice.nix
       ./theming.nix
     ];
   };
