@@ -28,6 +28,7 @@
     # Desktop apps
     ghostty
     obsidian
+    pwvucontrol
 
     # Let's pretend it's not here
     quickshell
