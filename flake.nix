@@ -10,22 +10,13 @@
     # Secure boot support
     lanzaboote.url = "github:nix-community/lanzaboote";
     lanzaboote.inputs.nixpkgs.follows = "nixpkgs";
+
+    # Work in Progress
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    import-tree.url = "github:vic/import-tree";
   };
 
-  outputs =
-    inputs@{ nixpkgs, self, ... }:
-    {
-      nixosConfigurations = {
-        lenovo-laptop = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = { inherit inputs self; };
-          modules = [ ./hosts/lenovo-laptop/configuration.nix ];
-        };
-        asus-laptop = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          specialArgs = { inherit inputs self; };
-          modules = [ ./hosts/asus-laptop/configuration.nix ];
-        };
-      };
-    };
+  outputs = inputs:
+    inputs.flake-parts.lib.mkFlake
+    { inherit inputs; } (inputs.import-tree ./modules);
 }
