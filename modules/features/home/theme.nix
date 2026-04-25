@@ -4,7 +4,7 @@
     inputs.home-manager.flakeModules.home-manager
   ];
   flake.homeModules.theme =
-    { pkgs, ... }:
+    { pkgs, config, ... }:
     {
       gtk = {
         enable = true;
@@ -15,6 +15,7 @@
           size = "standard";
           variant = "mocha";
         };
+        gtk4.theme = config.gtk.theme;
       };
       qt = {
         enable = true;
