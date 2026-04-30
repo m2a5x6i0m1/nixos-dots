@@ -54,6 +54,7 @@
         smassh
         starship
         stow
+        tmux
         yazi
         zoxide
       ];
