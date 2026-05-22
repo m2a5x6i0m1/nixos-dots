@@ -15,6 +15,7 @@
       # Packages
       environment.systemPackages = with pkgs; [
         # Utilities For Wayland
+        awww
         brightnessctl
         cliphist
         swaynotificationcenter
