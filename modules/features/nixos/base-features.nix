@@ -55,6 +55,7 @@
         starship
         stow
         tmux
+        zellij
         yazi
         zoxide
       ];
