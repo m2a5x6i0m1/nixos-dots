@@ -19,6 +19,7 @@
         brightnessctl
         cliphist
         swaynotificationcenter
+        waypaper
         wev
         wl-clip-persist
         wl-clipboard
