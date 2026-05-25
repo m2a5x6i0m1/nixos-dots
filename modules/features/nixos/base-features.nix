@@ -45,6 +45,7 @@
       # Shell
       programs.zsh.enable = true;
       environment.systemPackages = with pkgs; [
+        btop
         busybox
         curl
         eza
