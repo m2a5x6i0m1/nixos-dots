@@ -54,9 +54,10 @@
         smassh
         starship
         stow
+        television
         tmux
-        zellij
         yazi
+        zellij
         zoxide
       ];
     };
