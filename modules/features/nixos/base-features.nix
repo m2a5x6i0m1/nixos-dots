@@ -51,6 +51,7 @@
         eza
         fd
         fzf
+        lazydocker
         ripgrep
         smassh
         starship
