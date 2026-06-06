@@ -5,16 +5,23 @@
       self.nixosModules.asus-laptop-specific
       self.nixosModules.asus-laptop-hardware
 
-      self.nixosModules.base-features
-      self.nixosModules.desktop-features
+      self.nixosModules.boot
+      self.nixosModules.nix-settings
+      self.nixosModules.shell
+      self.nixosModules.common
 
       self.nixosModules.firefox
-      self.nixosModules.greetd
-      self.nixosModules.hyprland
       self.nixosModules.neovim
+      self.nixosModules.hyprland
+      self.nixosModules.greetd
+
+      self.nixosModules.pipewire
+      self.nixosModules.bluetooth
+      self.nixosModules.envs
+      self.nixosModules.fonts
 
       self.nixosModules.users-max
-      self.nixosModules.home-manager
+      self.nixosModules.home-manager-max
     ];
   };
 

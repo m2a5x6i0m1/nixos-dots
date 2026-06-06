@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.nixosModules.home-manager = {
+  flake.nixosModules.home-manager-max = {
     imports = [ inputs.home-manager.nixosModules.home-manager ];
 
     home-manager.useGlobalPkgs = true;
