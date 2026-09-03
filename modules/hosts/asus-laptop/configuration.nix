@@ -19,6 +19,7 @@
       self.nixosModules.bluetooth
       self.nixosModules.envs
       self.nixosModules.fonts
+      self.nixosModules.nh
 
       self.nixosModules.users-max
       self.nixosModules.home-manager-max
