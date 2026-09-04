@@ -8,6 +8,7 @@
         atuin
         bat
         btop
+        sesh
         busybox
         curl
         eza
