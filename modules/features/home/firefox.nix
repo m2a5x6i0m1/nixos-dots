@@ -4,11 +4,10 @@
     inputs.home-manager.flakeModules.home-manager
   ];
   flake.homeModules.firefox =
-    { pkgs, config, ... }:
+    { config, ... }:
     {
       programs.firefox = {
         enable = true;
-        package = pkgs.firefox-esr;
         configPath = "${config.xdg.configHome}/mozilla/firefox";
         profiles = {
           default = {
