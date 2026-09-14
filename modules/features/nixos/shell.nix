@@ -20,6 +20,7 @@
         jq
         jujutsu
         pass
+        pi-coding-agent
         ripgrep
         ripgrep-all
         sesh
