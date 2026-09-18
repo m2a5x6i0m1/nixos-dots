@@ -13,7 +13,7 @@
         cd $VAULT_DIR || exit 1
 
         git add .
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S')" || exit 0
+        git commit -m "fixup! $(date '+%Y-%m-%d %H:%M:%S')" || exit 0
 
         git pull --rebase origin main || exit 1
         git push origin main
