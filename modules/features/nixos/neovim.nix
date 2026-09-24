@@ -18,6 +18,9 @@
         harper
         nixd
 
+        typst
+        tinymist
+
         nixfmt
         prettierd
         stylua
