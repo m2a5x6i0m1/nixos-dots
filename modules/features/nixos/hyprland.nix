@@ -2,9 +2,17 @@
 {
   flake.nixosModules.hyprland =
     { pkgs, ... }:
+    let
+      nixpkgs-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+    in
     {
       # Wayland compositor of my choice
-      programs.hyprland.enable = true;
+      programs.hyprland = {
+        enable = true;
+        package = nixpkgs-unstable.hyprland;
+        portalPackage = nixpkgs-unstable.xdg-desktop-portal-hyprland;
+      };
+
       programs.hyprlock.enable = true;
       services.hypridle.enable = true;
 
