@@ -10,6 +10,7 @@
         btop
         busybox
         curl
+        devenv
         eza
         fd
         ffmpeg
