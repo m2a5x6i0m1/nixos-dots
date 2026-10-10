@@ -1,6 +1,7 @@
 { self, inputs, ... }:
 {
   flake.nixosModules.firefox =
+    { pkgs, ... }:
     let
       lock-false = {
         Value = false;
@@ -14,6 +15,7 @@
     {
       programs.firefox = {
         enable = true;
+        package = pkgs.firefox-esr-140;
 
         # Check about:policies#documentation for options.
         policies = {
