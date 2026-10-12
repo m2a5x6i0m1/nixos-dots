@@ -15,7 +15,7 @@
     programs.lazygit = {
       enable = true;
       settings = {
-        gui.showIcons = false;
+        gui.showCommandLog = false;
         gui.theme = {
           lightTheme = false;
           activeBorderColor = [ "#fab387" ];
