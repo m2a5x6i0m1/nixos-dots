@@ -18,7 +18,6 @@
         self.homeModules.git
         self.homeModules.notes-sync
         self.homeModules.firefox
-        self.homeModules.onlyoffice
         self.homeModules.theme
       ];
     };
