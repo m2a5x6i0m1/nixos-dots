@@ -41,7 +41,7 @@
         # Desktop apps
         ghostty
         localsend
-        obsidian
+        # obsidian
         pwvucontrol
 
         # Let's pretend it's not here
